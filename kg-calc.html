@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kg-Calc</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<form class="bluebox">
+
+    <input id="lb" type="number" placeholder="Enter pounds here" type="text" name="pounds">
+ <button onClick="calculate(); return false;">Calculate</button>
+  <h2 id="total">&nbsp;</h2>
+</form>
+
+<script type="text/javascript">
+	
+
+
+var kg = 2.2046;
+var lb = document.getElementById("lb");
+
+function calculate() {
+
+   
+  var result = lb.value /  kg;
+  document.getElementById("total").innerHTML = Math.round(result);
+ 
+}
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
